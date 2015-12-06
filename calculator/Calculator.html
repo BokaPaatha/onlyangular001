@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Calculator from Angular</title>
+
+<script type="text/javascript"
+	src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src='./main.js' ></script> 
+</head>
+<body>
+
+	<table ng-controller='CalculatorController'>
+		<thead>
+			<tr>
+				<th colspan="2">
+					<h1>Calculator</h1>
+				</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>First number</td>
+			<td><input ng-model="number1" type="number"></input></td>
+
+		</tr>
+		<tr>
+			<td>Second number</td>
+			<td><input ng-model="number2" type="number"></input></td>
+		</tr>
+		<tr>
+			<td colspan='2'><input type="button" ng-click="sum()"
+				value="Add"></input></td>
+		</tr>
+		<tr>
+			<td>Result</td>
+			<td>{{result}}</td>
+		</tr>
+	</table>
+
+
+
+</body>
+</html>
+
+
+
